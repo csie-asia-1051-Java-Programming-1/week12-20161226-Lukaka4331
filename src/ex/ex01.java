@@ -1,4 +1,4 @@
-﻿package ex;
+﻿package ex;import java.util.Scanner;
 /*
  * Topic: 輸入一整數 N 及 N 個整數，請依照十進位中各位數字和由小到大排序輸出。如果各位數字和相等則比較數值由小到大排列。
  例如: 9122 的各位數字和為 9+1+2+2=14、3128 的各位數字和為 3+1+2+8=14 而 5112 的各位數字和為 5+1+1+2=9。
@@ -11,7 +11,18 @@ public class ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	    Scanner scn=new Scanner(System.in);
 
+	int v1=scn.nextInt();
+	  int sum=0;
+
+		
+	  while(v1>0){
+	  	sum=(int)(sum + v1%10);v1=v1/10;
+	  }
+	  System.out.println(sum);
+	} 
+	
 	}
 
-}
+
